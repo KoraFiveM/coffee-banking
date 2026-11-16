@@ -1,0 +1,147 @@
+/* Opt-in Coffee Banking skin. Never select body, :root or another application's frame. */
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) {
+    --background: 0 0% 75%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 82%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --secondary: 0 0% 75%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 88%;
+    --muted-foreground: 0 0% 28%;
+    --accent: 240 100% 25%;
+    --accent-foreground: 0 0% 100%;
+    --primary: 240 100% 25%;
+    --primary-foreground: 0 0% 100%;
+    --brand-soft: 240 100% 25% / 12%;
+    --brand-border: 240 100% 25% / 50%;
+    --brand-hover: 240 100% 20%;
+    --brand-pressed: 240 100% 15%;
+    --border: 0 0% 50%;
+    --border-strong: 0 0% 20%;
+    --input: 0 0% 50%;
+    --control-border: 0 0% 50%;
+    --control-border-hover: 0 0% 20%;
+    --surface-raised: 0 0% 88%;
+    --surface-hover: 0 0% 85%;
+    --ring: 240 100% 25%;
+    --focus-ring: 240 100% 25% / 55%;
+    --selection: 240 100% 25% / 22%;
+    --success: 120 100% 22%;
+    --warning: 35 100% 25%;
+    --destructive: 0 100% 35%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-soft: 0 100% 35% / 10%;
+    --destructive-border: 0 100% 35% / 50%;
+    --font-sans: Tahoma, Verdana, Arial, sans-serif;
+    --font-heading: Tahoma, Verdana, Arial, sans-serif;
+    --radius: 0px;
+    --radius-sm: 0px;
+    --radius-lg: 0px;
+    --shadow-low: 1px 1px 0 #000;
+    --shadow-floating: 2px 2px 0 #000;
+    --shadow-modal: 3px 3px 0 #000;
+    --coffee-raised: inset 1px 1px #fff, inset -1px -1px #808080;
+    --coffee-sunken: inset 1px 1px #808080, inset -1px -1px #fff;
+    font-family: var(--font-sans);
+    color: #000;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) * {
+    border-radius: 0 !important;
+    animation: none !important;
+    transition-duration: 0ms !important;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) main {
+    padding: 3px;
+    border: 1px solid #000;
+    background: #c0c0c0;
+    box-shadow: inset 2px 2px #fff, inset -2px -2px #808080, 3px 3px #000;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) main > aside > header,
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) main > section > header {
+    min-height: 52px;
+    background: #000080;
+    border-bottom: 2px solid #808080;
+    color: #fff;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) header :is(h1, span, p, svg) {
+    color: inherit;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) main > aside {
+    background: #c0c0c0;
+    border-right: 2px solid #808080;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) main > section > div[role="tablist"] {
+    min-height: 46px;
+    padding-top: 6px;
+    background: #c0c0c0;
+    border-bottom: 1px solid #808080;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) button {
+    min-height: 32px;
+    border: 1px solid #404040;
+    background: #c0c0c0;
+    color: #000;
+    box-shadow: var(--coffee-raised);
+    transform: none;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) button:hover:not(:disabled) {
+    background: #d4d4d4;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) button:active:not(:disabled),
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) button[aria-current="page"],
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) button[aria-selected="true"] {
+    background: #dedede;
+    box-shadow: var(--coffee-sunken);
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) button:focus-visible,
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) :is(input, textarea, [tabindex]):focus-visible {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) :is(input, textarea, [role="combobox"]) {
+    background: #fff;
+    color: #000;
+    border: 1px solid #404040;
+    box-shadow: var(--coffee-sunken);
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) :is([role="listbox"], [role="dialog"]) {
+    border: 1px solid #000;
+    box-shadow: var(--coffee-raised), 2px 2px #000;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) [role="option"][data-highlighted] {
+    background: #000080;
+    color: #fff;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) :is(table, main section section) {
+    border: 1px solid #808080;
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) thead {
+    background: #c0c0c0;
+    box-shadow: var(--coffee-raised);
+}
+
+:is([data-kora-app="kora_banking:bank"], #root[data-kora-active-app="kora_banking:bank"] [role="listbox"], #root[data-kora-active-app="kora_banking:bank"] [role="dialog"]) tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+#root[data-kora-active-app="kora_banking:bank"] :is([role="listbox"], [role="dialog"]) {
+    border: 1px solid #000;
+    box-shadow: var(--coffee-raised), 2px 2px #000;
+}
